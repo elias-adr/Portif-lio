@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo Web</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="elementos.js" defer></script>
+</head>
+
+<body>
+
+    <main class="container">
+
+
+        <section class="card">
+            <h1 class="titulo-principal">Currículo Web</h1>
+            <h2 class="subtitulo">Editar perfil</h2>
+
+            <form action="">
+
+                <div class="grupo-formulario">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome">
+                </div>
+
+                <div class="grupo-formulario">
+                    <label for="cargo_desejo">Cargo de desejo:</label>
+                    <input type="text" id="cargo_desejo" name="cargo">
+                </div>
+
+                <div class="grupo-formulario">
+                    <label for="resumo_profissional">Seu Resumo Profissional:</label>
+
+                    <textarea id="resumo_profissional" name="resumo" rows="4"></textarea>
+                </div>
+
+                < <div class="grupo-botoes">
+                    <button type="button" class="btn btn-primario" id="btn-salvar">Salvar Perfil</button>
+                    <button type="reset" class="btn btn-primario" id="btn-limpar">Limpar Perfil</button>
+                    <button type="button" class="btn btn-primario" id="btn-tema">Alterar Tema</button>
+                    </div>
+            </form>
+        </section>
+
+
+        <section class="card">
+            <h2 class="subtitulo">Visualização do Currículo</h2>
+
+            <div id="visualizacao">
+                <p>O seu resumo profissional aparecerá aqui.</p>
+            </div>
+        </section>
+
+    </main>
+</body>
+
+</html>

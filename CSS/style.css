@@ -1,0 +1,125 @@
+/* Reset Básico - Garante que todos os navegadores comecem iguais */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos do Corpo da Página */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f2f5;
+    color: #333333;
+    padding: 2rem 1rem;
+}
+
+/* Contentor Principal */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Estilo dos Cartões (Secções brancas) */
+.card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 24px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos */
+.titulo-principal {
+    color: #1a73e8;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.subtitulo {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Formulários */
+.grupo-formulario {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+
+.grupo-formulario label {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #555;
+
+}
+
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+    border-color: #1a73e8;
+    outline: none;
+}
+
+/* Botões */
+.grupo-botoes {
+    display: flex;
+
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.btn-primario {
+    background-color: #1a73e8;
+    color: white;
+}
+
+.btn-primario:hover {
+    background-color: #1557b0;
+}
+
+.tema-escuro {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.tema-escuro .card {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.05);
+}
+
+.tema-escuro .titulo-principal {
+    color: #66b2ff;
+}
+
+.tema-escuro input[type="text"],
+.tema-escuro textarea {
+    background-color: #333;
+    color: #fff;
+    border-color: #555;
+}
